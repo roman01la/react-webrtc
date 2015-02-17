@@ -1,0 +1,39 @@
+{
+  "name": "react-webrtc",
+  "version": "1.0.0",
+  "description": "WebRTC React components for real-time communication in React applications",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=dev node dev-server.js",
+    "prepublish": "NODE_ENV=production webpack --config webpack.config.js -p --colors --progress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/roman01la/react-webrtc.git"
+  },
+  "keywords": [
+    "react-component",
+    "react",
+    "reactjs",
+    "webrtc"
+  ],
+  "author": "Roman Liutikov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/roman01la/react-webrtc/issues"
+  },
+  "homepage": "https://github.com/roman01la/react-webrtc",
+  "peerDependencies": {
+    "react": "^0.12.2"
+  },
+  "devDependencies": {
+    "babel": "^4.0.1",
+    "babel-core": "^4.0.1",
+    "babel-loader": "^4.0.0",
+    "babel-runtime": "^4.0.1",
+    "core-js": "^0.5.4",
+    "react-hot-loader": "^1.1.5",
+    "webpack": "^1.5.3",
+    "webpack-dev-server": "^1.7.0"
+  }
+}
