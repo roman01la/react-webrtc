@@ -1,11 +1,10 @@
 {
   "name": "react-webrtc",
   "version": "1.0.0",
-  "description": "WebRTC React components for real-time communication in React applications",
-  "main": "index.js",
+  "description": "WebRTC React mixins for real-time communication in React components",
+  "main": "./src/index.es6",
   "scripts": {
-    "start": "NODE_ENV=dev node dev-server.js",
-    "prepublish": "NODE_ENV=production webpack --config webpack.config.js -p --colors --progress"
+    "start": "NODE_ENV=dev node dev-server.js --colors --progress"
   },
   "repository": {
     "type": "git",
@@ -31,6 +30,7 @@
     "babel-core": "^4.0.1",
     "babel-loader": "^4.0.0",
     "babel-runtime": "^4.0.1",
+    "colors": "^1.0.3",
     "core-js": "^0.5.4",
     "react-hot-loader": "^1.1.5",
     "webpack": "^1.5.3",

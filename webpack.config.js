@@ -1,4 +1,10 @@
-var webpack = require('webpack');
+var webpack = require('webpack'),
+    colors = require('colors');
+
+if (process.env.NODE_ENV !== 'dev') {
+
+    throw 'Dev build only!'.red;
+}
 
 const ADDRESS = '0.0.0.0';
 const PORT = 3000;
@@ -8,11 +14,11 @@ module.exports = {
     address: ADDRESS,
     port: PORT,
     devtool: 'source-map',
-    watch: process.env.NODE_ENV === 'dev',
+    watch: true,
     entry: [
         'webpack-dev-server/client?http://' + ADDRESS + ':' + PORT,
         'webpack/hot/only-dev-server',
-        __dirname + '/src/index.es6'
+        __dirname + '/examples/main.jsx'
     ],
     module: {
         loaders: [
@@ -20,7 +26,7 @@ module.exports = {
         ]
     },
     output: {
-        path: __dirname + '/build',
+        path: __dirname + '/',
         filename: 'react-webrtc.js',
         publicPath: '/'
     },
