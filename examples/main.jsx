@@ -111,30 +111,30 @@ const Chat = React.createClass({
 
         return (
 
-            <div>
+            <div className='app'>
 
-                <div>Me: {this.state.rtc_id}</div>
+                <div className='me'>Me: {this.state.rtc_id}</div>
 
-                <textarea placeholder='Type in message...' value={this.state.message} onChange={this._onMsg} />
-                <div><button onClick={this._send}>Send</button></div>
+                <textarea className='new-msg' placeholder='Type in message...' value={this.state.message} onChange={this._onMsg} />
+                <div><button className='btn' onClick={this._send}>Send</button></div>
 
-                <div>
+                <div className='field'>
                     <label>Connect to:</label>
                     <input type='text' value={this.state.target} onChange={this._onTarget} />
-                    <button onClick={this._connect}>Connect</button>
+                    <button className='btn' onClick={this._connect}>Connect</button>
                 </div>
 
-                <div>
+                <div className='field'>
                     <label>Disconnect from:</label>
                     <input type='text' value={this.state.target} onChange={this._onTarget} />
-                    <button onClick={this._disconnect}>Disconnect</button>
+                    <button className='btn' onClick={this._disconnect}>Disconnect</button>
                 </div>
 
-                <div>
-                    <button onClick={this._disconnectFromAll}>Disconnect from all</button>
+                <div className='field'>
+                    <button className='btn' onClick={this._disconnectFromAll}>Disconnect from all</button>
                 </div>
 
-                <div style={{height: 100}}>{messages}</div>
+                <div className='msgs' style={{height: 100}}>{messages}</div>
 
             </div>
         );
