@@ -4,6 +4,8 @@
 
 WebRTC React mixins for real-time communication in React components using [PeerJS](https://github.com/peers/peerjs) library. Read more on how [PeerJS](http://peerjs.com/docs) works.
 
+[DEMO](http://demo.romanliutikov.com/react-webrtc/)
+
 ## WIP
 
 This is WIP, check [Todo](#todo). More features will come soon.
