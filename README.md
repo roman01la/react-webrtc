@@ -1,3 +1,5 @@
+[![npm version](https://badge.fury.io/js/react-webrtc.svg)](http://badge.fury.io/js/react-webrtc)
+
 # React WebRTC
 
 WebRTC React mixins for real-time communication in React components using [PeerJS](https://github.com/peers/peerjs) library. Read more on how [PeerJS](http://peerjs.com/docs) works.
