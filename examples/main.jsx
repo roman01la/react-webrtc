@@ -141,4 +141,5 @@ const Chat = React.createClass({
     }
 });
 
-React.render(<Chat APIKey='sdysmxpiv1iz4cxr' />, document.body);
+React.render(<Chat APIKey='sdysmxpiv1iz4cxr' />, document.getElementById('app1'));
+React.render(<Chat APIKey='sdysmxpiv1iz4cxr' />, document.getElementById('app2'));
