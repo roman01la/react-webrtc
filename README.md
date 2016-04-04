@@ -1,4 +1,5 @@
 [![npm version](https://badge.fury.io/js/react-webrtc.svg)](http://badge.fury.io/js/react-webrtc)
+![](https://img.shields.io/badge/maintainer%20needed-!-red.svg)
 
 # React WebRTC
 
